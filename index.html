@@ -13,13 +13,13 @@
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>
             Rock <i class="fa fa-hand-rock-o fa-lg fa-spin"></i> 
             Paper <i class="fa fa-hand-paper-o fa-lg fa-spin"></i>
             Scissors <i class="fa fa-hand-scissors-o fa-lg fa-spin"></i>
         </h1>
-    </header>
+    </div>
 
     <div class="column1-section">
         <p>
@@ -30,27 +30,26 @@
 
     <div class="column2-section">
         <div class="card">
-            <h3>
-                <i class="fa fa-user-secret fa-3x"></i>
-                <br>
-                Human
-            </h3>
-            <div id="playerScore"></div>
-            <div id="playerChoice"></div>
-            <div class="choice">
-                <button><i class="fa fa-hand-rock-o fa-rotate-90 fa-2x"></i> </button>
-                <button><i class="fa fa-hand-paper-o fa-2x"></i></button>
-                <button><i class="fa fa-hand-scissors-o fa-2x"></i></button>
+            <i class="fa fa-user-secret fa-4x"></i>
+            <h3>Human</h3>
+            <div class="score-box" id="playerScore"></div>
+            <div class="choice-box" id="playerChoice">
+                <i class="fa fa-question fa-5x"></i>
+            </div>
+            <div class="group-buttons">
+                <button><i class="fa fa-hand-rock-o fa-3x fa-rotate-90 "></i> </button>
+                <button><i class="fa fa-hand-paper-o fa-3x"></i></button>
+                <button><i class="fa fa-hand-scissors-o fa-3x fa-flip-horizontal"></i></button>
             </div>
         </div>
+        <button>Start the game</button>
         <div class="card">
-            <h3>
-                <i class="fa fa-android fa-3x"></i>
-                <br>
-                Robot
-            </h3>
-            <div id="computerScore"></div>
-            <div id="computerChoice"></div>
+            <i class="fa fa-android fa-4x"></i>
+            <h3>Robot</h3>
+            <div class="score-box" id="computerScore"></div>
+            <div class="choice-box" id="computerChoice">
+                <i class="fa fa-question fa-5x"></i>
+            </div>
         </div>
     </div>
 
@@ -58,12 +57,14 @@
 
     </div>
 
-    <footer>
-        © 2023 - Zee
-        <a href="https://github.com/zguessous" target="_blank">
-            <i class="fa fa-github fa-lg"></i>
-        </a>
-    </footer>
+    <div class="footer">
+        <p>
+            © 2023 - Zee
+            <a href="https://github.com/zguessous" target="_blank">
+                <i class="fa fa-github fa-lg"></i>
+            </a>
+        </p>
+    </div>
     
 </body>
 </html>
