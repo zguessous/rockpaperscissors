@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="" defer></script>
+    <title>Rock Paper Scissors Game</title>
 </head>
 <body>
-    <script src="game.js"></script>
+    <header>
+        <h1>
+            Rock <i class="fa fa-hand-rock-o fa-lg fa-spin"></i> 
+            Paper <i class="fa fa-hand-paper-o fa-lg fa-spin"></i>
+            Scissors <i class="fa fa-hand-scissors-o fa-lg fa-spin"></i>
+        </h1>
+    </header>
+
+    <div class="column1-section">
+        <p>
+            <i class="fa fa-trophy fa-lg"></i>
+            First to a score of 5 wins the game!
+        </p>
+    </div>
+
+    <div class="column2-section">
+        <div class="card">
+            <h3>
+                <i class="fa fa-user-secret fa-3x"></i>
+                <br>
+                Human
+            </h3>
+            <div id="playerScore"></div>
+            <div id="playerChoice"></div>
+            <div class="choice">
+                <button><i class="fa fa-hand-rock-o fa-rotate-90 fa-2x"></i> </button>
+                <button><i class="fa fa-hand-paper-o fa-2x"></i></button>
+                <button><i class="fa fa-hand-scissors-o fa-2x"></i></button>
+            </div>
+        </div>
+        <div class="card">
+            <h3>
+                <i class="fa fa-android fa-3x"></i>
+                <br>
+                Robot
+            </h3>
+            <div id="computerScore"></div>
+            <div id="computerChoice"></div>
+        </div>
+    </div>
+
+    <div class="column1-section">
+
+    </div>
+
+    <footer>
+        © 2023 - Zee
+        <a href="https://github.com/zguessous" target="_blank">
+            <i class="fa fa-github fa-lg"></i>
+        </a>
+    </footer>
+    
 </body>
 </html>
