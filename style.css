@@ -1,91 +1,135 @@
 body {
     font-family: 'Concert One', cursive;
-    background-color:rgb(254, 246, 224);
+    background-color: #aec2f9;
     margin: 0px;
     height: fit-content;
-    color: rgb(70, 70, 70);
 }
 
 div {
-    border: 1px solid black;
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .header, .footer {
-    text-align: center;
     margin: 0px auto;
-    padding: 0px;
 }
 
 .header {
-    background-color: rgb(255, 232, 178);
-    box-shadow: 0px 5px 5px rgb(165, 140, 82);
+    padding-left: 200px;
+    border-bottom: 1px solid #071af2;
 }
 
-h1, h3, p {
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h3, p {
     text-align: center;
     margin: 0px;
     padding: 10px;
 }
 
-.column1-section {
-    width: fit-content;
+.message-board {
+    width: 200px;
     margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(93, 149, 93);
-    background-color: rgb(166, 248, 166);
+    background-color:#aec2f9;
+    padding: 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px #7484ab;
 }
 
-.column2-section {
-    margin: 40px auto;
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-box {
+    height: 10px;
+    border-top: 2px solid #a2b5ea;
+    color: #071af2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main {
+    margin: 40px 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 
 }
 
 .card {
-    width: 300;
-    height: 400px;
+    width: 300px;
+    background-color: #071af2;
+    color: #aec2f9;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .score-box {
-    width: 12px;
-    height:20px;
+    width: 30px;
+    height:30px;
     margin: 10px;
-    background-color: rgb(70, 70, 70);
-    color: rgb(252, 252, 252);
-    border-radius: 10px;
-}
-
-.choice-box {
-    width: 100px;
-    height: 100px;
+    background-color: #aec2f9;
+    color:#071af2;
+    border-radius: 50%;
+    font-size: x-large;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(70, 70, 70);
+    
+}
+
+.choice-box {
+    width: 80px;
+    height: 80px;
+    background-color: #aec2f9;
+    color:#071af2;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
-    width: fit-content;
+    font-family: 'Concert One', cursive;
     margin: 10px;
     padding: 10px 15px;
+    color:#071af2;
     cursor: pointer;
-    background-color: rgb(255, 222, 146);
-    box-shadow: 0px 5px;
-    border: none;
+    background-color:#aec2f9;
     border-radius: 10px;
+    border: none;
 }
 
-button:active {
-    background-color: rgb(250, 198, 74);
+#computerButtons button {
+    cursor:not-allowed;
+}
+
+#playerButtons button:hover {
+    box-shadow: 0px 5px #aec2f9;
+    background-color:#071af2;
+    color:#aec2f9;
+    border: 2px solid #aec2f9;
+    transform: translateY(-5px)
+}
+
+#playerButtons button:active {
+    background-color:#071af2;
+    color:#aec2f9;
     box-shadow: 0px 0px;
     transform: translateY(5px);
     

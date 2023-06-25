@@ -9,52 +9,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="" defer></script>
+    <script src="game.js" defer></script>
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
     <div class="header">
         <h1>
-            Rock <i class="fa fa-hand-rock-o fa-lg fa-spin"></i> 
-            Paper <i class="fa fa-hand-paper-o fa-lg fa-spin"></i>
-            Scissors <i class="fa fa-hand-scissors-o fa-lg fa-spin"></i>
+            Rock <i class="fa fa-hand-rock-o fa-lg fa-rotate-90"></i> 
+            <br> 
+            Paper <i class="fa fa-hand-paper-o fa-lg "></i> 
+            <br>
+            Scissors <i class="fa fa-hand-scissors-o fa-lg fa-flip-horizontal"></i>
         </h1>
     </div>
 
-    <div class="column1-section">
-        <p>
-            <i class="fa fa-trophy fa-lg"></i>
-            First to a score of 5 wins the game!
-        </p>
-    </div>
-
-    <div class="column2-section">
+    <div class="main">
         <div class="card">
             <i class="fa fa-user-secret fa-4x"></i>
             <h3>Human</h3>
-            <div class="score-box" id="playerScore"></div>
-            <div class="choice-box" id="playerChoice">
-                <i class="fa fa-question fa-5x"></i>
+            <div class="score-box" id="playerScore">
+                0
             </div>
-            <div class="group-buttons">
-                <button><i class="fa fa-hand-rock-o fa-3x fa-rotate-90 "></i> </button>
-                <button><i class="fa fa-hand-paper-o fa-3x"></i></button>
-                <button><i class="fa fa-hand-scissors-o fa-3x fa-flip-horizontal"></i></button>
+            <div class="choice-box" id="playerChoice">
+                <i class="fa fa-question fa-4x"></i>
+            </div>
+            <div class="group-buttons" id="playerButtons">
+                <button id="rock"><i class="fa fa-hand-rock-o fa-2x fa-rotate-90 "></i> </button>
+                <button id="paper"><i class="fa fa-hand-paper-o fa-2x"></i></button>
+                <button id="scissors"><i class="fa fa-hand-scissors-o fa-2x fa-flip-horizontal"></i></button>
             </div>
         </div>
-        <button>Start the game</button>
+        <div class="message-board">
+            <div class="message">
+                <i class="fa fa-trophy fa-lg"></i>
+                <p>First to a score of 5 wins the game!</p>
+            </div>
+            <div class="message-box">
+                <a href="#">
+                    <p>Start!</p>
+                </a>
+            </div>
+            
+            
+        </div>
         <div class="card">
             <i class="fa fa-android fa-4x"></i>
             <h3>Robot</h3>
-            <div class="score-box" id="computerScore"></div>
+            <div class="score-box" id="computerScore">
+                0
+            </div>
             <div class="choice-box" id="computerChoice">
-                <i class="fa fa-question fa-5x"></i>
+                <i class="fa fa-question fa-4x"></i>
+            </div>
+            <div class="group-buttons" id="computerButtons">
+                <button><i class="fa fa-hand-rock-o fa-2x fa-flip-horizontal"></i> </button>
+                <button><i class="fa fa-hand-paper-o fa-2x"></i></button>
+                <button><i class="fa fa-hand-scissors-o fa-2x"></i></button>
             </div>
         </div>
-    </div>
-
-    <div class="column1-section">
-
     </div>
 
     <div class="footer">
@@ -65,6 +77,5 @@
             </a>
         </p>
     </div>
-    
 </body>
 </html>
